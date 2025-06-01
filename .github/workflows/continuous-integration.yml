@@ -33,7 +33,7 @@ jobs:
         cache: maven
     - name: Build Maven
       working-directory: ./S13_DockerizingAfter/rest-with-spring-boot-and-java-erudio
-      run: mvn -clean package
+      run: mvn clean package
     - name: Build image
       working-directory: ./S13_DockerizingAfter
       run: docker compose build
